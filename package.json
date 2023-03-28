@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc && tsc-alias",
     "start": "node dist/server.js",
+    "build": "tsc && tsc-alias",
     "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --inspect --cls src/server.ts"
   },
   "keywords": [],
