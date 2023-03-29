@@ -1,10 +1,12 @@
+import dotenv from "dotenv";
+dotenv.config();
 import express from "express";
 import morgan from "morgan";
 import { createProxyMiddleware } from "http-proxy-middleware";
 
 const PORT = process.env.PORT;
 const REDIRECT_URL = process.env.REDIRECT_URL;
-const app = express()
+const app = express();
 
 app.use(morgan("dev"));
 

@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config dist/server.js",
+    "start": "node dist/server.js",
     "build": "tsc && tsc-alias",
-    "dev": "ts-node-dev -r dotenv/config -r tsconfig-paths/register --respawn --transpile-only --inspect --cls src/server.ts"
+    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --inspect --cls src/server.ts"
   },
   "keywords": [],
   "author": "",
