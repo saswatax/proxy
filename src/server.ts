@@ -4,8 +4,8 @@ import { createProxyMiddleware } from "http-proxy-middleware";
 
 const PORT = process.env.PORT;
 const REDIRECT_URL = process.env.REDIRECT_URL;
-const app = express();
-console.log(PORT, REDIRECT_URL)
+const app = express()
+
 app.use(morgan("dev"));
 
 app.use("/status", (req, res) => res.send("running"));
