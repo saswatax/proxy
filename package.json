@@ -4,15 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "node -r dotenv/config dist/server.js",
     "build": "tsc && tsc-alias",
-    "dev": "ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --inspect --cls src/server.ts"
+    "dev": "ts-node-dev -r dotenv/config -r tsconfig-paths/register --respawn --transpile-only --inspect --cls src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "http-proxy-middleware": "^2.0.6",
     "morgan": "^1.10.0"
