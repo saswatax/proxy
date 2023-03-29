@@ -1,11 +1,11 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/cors': ^2.8.13
   '@types/express': ^4.17.17
   '@types/morgan': ^1.9.4
   '@types/node': ^18.15.10
   cors: ^2.8.5
-  dotenv: ^16.0.3
   express: ^4.18.2
   http-proxy-middleware: ^2.0.6
   morgan: ^1.10.0
@@ -16,12 +16,12 @@ specifiers:
 
 dependencies:
   cors: 2.8.5
-  dotenv: 16.0.3
   express: 4.18.2
   http-proxy-middleware: 2.0.6_@types+express@4.17.17
   morgan: 1.10.0
 
 devDependencies:
+  '@types/cors': 2.8.13
   '@types/express': 4.17.17
   '@types/morgan': 1.9.4
   '@types/node': 18.15.10
@@ -102,6 +102,12 @@ packages:
     resolution: {integrity: sha512-cdeYyv4KWoEgpBISTxWvqYsVy444DOqehiF3fM3ne10AmJ62RSyNkUnxMJXHQWRQQX2eR94m5y1IZyDwBjV9FQ==}
     dependencies:
       '@types/node': 18.15.10
+
+  /@types/cors/2.8.13:
+    resolution: {integrity: sha512-RG8AStHlUiV5ysZQKq97copd2UmVYw3/pRMLefISZ3S1hK104Cwm7iLQ3fTKx+lsUH2CE8FlLaYeEA2LSeqYUA==}
+    dependencies:
+      '@types/node': 18.15.10
+    dev: true
 
   /@types/express-serve-static-core/4.17.33:
     resolution: {integrity: sha512-TPBqmR/HRYI3eC2E5hmiivIzv+bidAfXofM+sbonAGvyDhySGw9/PQZFt2BLOrjUUR++4eJVpx6KnLQK1Fk9tA==}
@@ -350,11 +356,6 @@ packages:
     dependencies:
       path-type: 4.0.0
     dev: true
-
-  /dotenv/16.0.3:
-    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
-    engines: {node: '>=12'}
-    dev: false
 
   /dynamic-dedupe/0.3.0:
     resolution: {integrity: sha512-ssuANeD+z97meYOqd50e04Ze5qp4bPqo8cCkI4TRjZkzAUgIDTrXV1R8QCdINpiI+hw14+rYazvTRdQrz0/rFQ==}
